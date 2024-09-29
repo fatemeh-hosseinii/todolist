@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    direction: ltr;
+}
+body{
+    animation: changecolor 10s ease-in infinite;
+}
+
+.maine{
+    animation: changecolor 10s ease-in infinite;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.list{
+   padding: 15px;
+   gap: 20px;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: space-around;
+}
+.ul-list{
+    width: 60%;
+   
+}
+.ul-list>ul{
+    width: 100%;
+   
+}
+ li{
+    background-color: rgb(234, 180, 203);
+    border: 2px solid  rgb(215, 125, 155);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 5px;
+    list-style: none;
+    text-align: start;
+    font-size: 20px;
+    width: 100%;
+}
+li>p{
+    margin-left: 2px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+li>div{
+    width:45% ;
+    display: flex;
+    justify-content: space-between;
+   
+} 
+li>div>button{
+    border: unset;
+    padding: 8px 11px;
+    border: 1px solid palevioletred;
+    border-radius: 50px;
+    background-color: white;
+}
+.input-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.add{
+    padding:10px 26px ;
+    background-color: aliceblue;
+    border: unset;
+    font-weight: bolder;
+
+}
+.input-list>input{
+    width: 50%; 
+    padding: 2px;
+    background-color: rgb(255, 213, 220);
+    border: unset;
+}
+.input-list>input:focus{
+    outline: 0;
+}
+.list>h1{
+    font-size: 55px;
+}
+
+li>input{
+  width: 100%;
+  background-color: rgb(234, 180, 203);
+  border: unset;
+  margin-right: 150px;
+}
+li>input:focus{
+    outline: 0;
+}
+.check_list{
+    width: 20%;
+    height: 40%;
+}
+li>div>button:hover{
+    box-shadow: 0px 0px 8px rgb(235, 6, 82) ;
+}
+/* ////////////////js/////////////// */
+.close{
+    display: none;
+}
+.active{
+   text-decoration: line-through;
+}
+@keyframes changecolor {
+    0%{
+       background-color:  rgb(230, 154, 183); 
+    }
+    20%{
+       background-color:  rgb(255, 154, 230) ;
+    }
+    40%{
+      background-color: rgb(240, 159, 222);  
+    }
+    60%{
+        background-color: rgb(234, 169, 219) ;
+    }
+    80%{
+        background-color: rgb(253, 171, 217);
+    }
+    100%{
+        background-color:rgb(182, 127, 173) ;
+    }
+}
